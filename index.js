@@ -26,12 +26,12 @@ const fareDoubler = (createFareMultiplier) => {
 }
 
 const fareTripler = (createFareMultiplier) => {
-    let doubler = createFareMultiplier * 3
-    return doubler   
+    let tripler = createFareMultiplier * 3
+    return tripler   
 }
 
-const selectDifferentDrivers = (returnFirstTwoDrivers, driver) => {
-    return driver(returnFirstTwoDrivers)
+const selectDifferentDrivers = (arrayOfDrivers, returnFirstTwoDrivers) => {
+    return returnFirstTwoDrivers(arrayOfDrivers)
 } 
 
 
